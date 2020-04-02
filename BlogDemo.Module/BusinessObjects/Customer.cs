@@ -1,8 +1,10 @@
 ﻿using DevExpress.Persistent.Base;
 using DevExpress.Persistent.BaseImpl;
 using DevExpress.Xpo;
+using DevExpress.Xpo.Metadata;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -64,6 +66,16 @@ namespace BlogDemo.Module.BusinessObjects
                 return GetCollection<Invoice>(nameof(Invoices));
             }
         }
+
+
+        Image image;
+        [ValueConverter(typeof(ImageValueConverter))]
+        public Image Image
+        {
+            get => image;
+            set => SetPropertyValue(nameof(Image), ref image, value);
+        }
+
 
     }
 }

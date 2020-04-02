@@ -138,6 +138,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\AccessGridController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\EditLookupRecordsViewController.cs" />
+    <Compile Include="Controllers\RibbonFromModelWithoutEventController.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WinModule.cs">
       <SubType>Component</SubType>
