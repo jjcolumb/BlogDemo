@@ -109,6 +109,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\AddStyleController.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Controllers\SelectGroupInListViewController.cs">
       <SubType>Component</SubType>
     </Compile>
