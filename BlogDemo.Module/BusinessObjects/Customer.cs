@@ -76,6 +76,14 @@ namespace BlogDemo.Module.BusinessObjects
             set => SetPropertyValue(nameof(Image), ref image, value);
         }
 
+        string _tokenProperty;
+        [Size(SizeAttribute.DefaultStringMappingFieldSize)]
+        public string TokenProperty
+        {
+            get => _tokenProperty;
+            set => SetPropertyValue(nameof(TokenProperty), ref _tokenProperty, value);
+        }
+
 
     }
 }

@@ -115,6 +115,7 @@
     <Compile Include="Controllers\SelectGroupInListViewController.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Editors\ASPxTokenBoxPropertyEditor.cs" />
     <Compile Include="WebModule.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -125,6 +126,7 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Model.DesignedDiffs.xafml" />
+    <EmbeddedResource Include="Properties\licenses.licx" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Controllers\ReadMe.txt" />
