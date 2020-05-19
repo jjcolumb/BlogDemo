@@ -84,6 +84,12 @@ namespace BlogDemo.Module.BusinessObjects
             set => SetPropertyValue(nameof(TokenProperty), ref _tokenProperty, value);
         }
 
+        FileData _file;
+        public FileData File
+        {
+            get => _file;
+            set => SetPropertyValue(nameof(File), ref _file, value);
+        }
 
     }
 }
